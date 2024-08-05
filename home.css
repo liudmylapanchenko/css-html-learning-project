@@ -340,8 +340,6 @@ body {
     border-radius: 12px;
     padding: 50px;
     margin: 0 25px;
-    /*width: 425px;
-    height: 462px;*/
     box-shadow: 6px 6px 0 2px var(--grey-10);
     background: var(--orange-99);
     display: flex;
@@ -400,8 +398,6 @@ i {
     border: 2px solid var(--grey-15);
     border-radius: 12px;
     padding: 34px 30px;
-    /*width: 771px;
-    height: 108px;*/
     background: var(--orange-95);
     position: relative;
 
@@ -498,4 +494,94 @@ i {
 
 .checkbox:checked ~ .answer {
     max-height: 500px;
+}
+
+.explore {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 40px;
+}
+
+.explore-item {
+    width: calc(50% - 20px);
+    border: 2px solid var(--grey-15);
+    border-radius: 10px;
+    padding: 60px;
+    box-shadow: 4px 4px 0 2px var(--grey-10);
+    background: var(--orange-99);
+}
+
+.explore-title {
+    font-family: "Raleway", sans-serif;
+    font-weight: 700;
+    font-size: 34px;
+    line-height: 44px; 
+    text-align: center;
+    color: var(--grey-10);
+    margin-bottom: 24px;
+}
+
+.separator-container {
+    position: relative;
+}
+
+.explore-separator {
+    background-image: url(images/border.svg); 
+    background-repeat: space;
+    height: 12px;
+    width: calc(100% - 40px);
+    margin: 0 auto;
+}
+
+.explore-separator::before, .explore-separator::after {
+    content: "";
+    display: block;
+    border: solid 2px var(--grey-10);
+    border-radius: 50%;
+    width: 20px;
+    height: 20px;
+    position: absolute;
+    top: -4px;
+}
+
+.explore-separator::before {
+    left: 0;
+}
+
+.explore-separator::after {
+    right: 0;
+}
+
+.explore-text {
+    font-family: "Outfit", sans-serif;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 24px; 
+    text-align: center;
+    color: var(--grey-30);
+    margin-top: 40px;
+    margin-bottom: 60px;
+    flex-grow: 1;
+}
+
+.explore-button span {
+    font-family: "Outfit", sans-serif;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 27px; 
+    text-align: center;
+    color: var(--grey-20);
+    margin-right: 10px;
+}
+
+.explore-button {
+    border: 2px solid var(--grey-15);
+    border-radius: 8px;
+    padding: 18px 0px;
+    box-shadow: 2px 2px 0 2px var(--grey-10);
+    background: var(--orange-90);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
 }
