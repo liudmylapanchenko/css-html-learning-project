@@ -1,12 +1,11 @@
 @import url(base.css);
+@import url(common.css);
+@import url(variables.css);
 
 /* Footer */
 
 .footer {
-    border: 2px solid var(--grey-15);
-    border-radius: 12px;
     padding: 80px 80px 40px 80px;
-    box-shadow: 6px 6px 0 2px var(--grey-10);
     background: var(--orange-99);
     margin-bottom: 40px;
 }
@@ -17,6 +16,10 @@
     justify-content: space-between;
 }
 
+.footer-logo-and-moto {
+    display: flex;
+    flex-direction: column;
+}
 
 .footer-logo {
     display: flex;
@@ -49,7 +52,7 @@
 }
 
 .contacts-icon {
-    border: 2px solid var(--grey-15);
+    border: var(--common-border);
     border-radius: 4px;
     padding: 6px;
     width: 32px;
@@ -70,7 +73,8 @@
 .footer-navigation {
     display: grid;
     grid-auto-flow: column;
-    column-gap: 30px;
+    /* grid-template-columns: repeat(auto-fit, minmax(134px, 1fr)); */
+    gap: 50px 30px;
     margin: 0 0 36px 80px;
 }
 
@@ -120,6 +124,8 @@
 .policies-and-social-media {
     padding: 20px 0;
     display: flex;
+    flex-wrap: wrap;
+    row-gap: 20px;
     justify-content: space-between;
     align-items: center;
     border-bottom: 1px solid var(--grey-15);
@@ -128,7 +134,7 @@
 
 .policies-item {
     display: inline;
-    border-right: 2px solid var(--grey-15);
+    border-right: var(--common-border);
     padding: 0 10px;
 }
 
@@ -156,7 +162,7 @@
 }
 
 .social-media-item {
-    border: 2px solid var(--grey-15);
+    border: var(--common-border);
     border-radius: 6px;
     padding: 14px;
     width: 48px;
@@ -172,4 +178,136 @@
     text-align: center;
     color: var(--grey-40);
     margin-top: 20px;
+}
+
+@media screen and (max-width:479px) {
+    .footer {
+        padding: 60px 30px 30px 30px;
+    }
+
+    .footer-section-1 {
+        grid-auto-flow: row;
+        justify-content: center;
+        gap: 40px;
+    }
+
+    .footer-contacts {
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        padding: 0;
+        max-width: 300px;
+        align-items: center;
+    }
+
+    .footer-logo-and-moto {
+        flex-direction: column;
+    }
+
+    .footer-logo {
+        align-self: center;
+    }
+    
+    .footer-motto {
+        text-align: center;
+    }
+
+    .footer-navigation {
+        margin: 0;
+        grid-auto-flow: row;
+        grid-template-columns: repeat(auto-fit, minmax(134px, 1fr));
+    }
+
+    .home {
+        order: 1;
+    }
+    .academics {
+        order: 2;
+    }
+
+    .about-us {
+        order: 3;
+    }
+    .contact-us {
+        order: 4;
+    }
+
+    .contacts-container {
+        align-self: flex-start;
+    }
+
+    .policies-and-social-media {
+        justify-content: center;
+        flex-direction: column;
+    }
+
+    .policies-item a {
+        font-size: 15px;
+    }
+
+    .policies-item {
+        padding: 0 4px;
+    }
+
+    .copyright {
+        font-size: 14px;
+    }
+
+    .social-media-item {
+        width: 44px;
+        height: 44px;
+        padding: 12px;
+    }
+    
+}
+
+@media screen and (max-width:800px) {
+    .policies-and-social-media {
+        justify-content: center;
+        flex-direction: column;
+    }
+
+    .policies-item a {
+        font-size: 15px;
+    }
+
+    .policies-item {
+        padding: 0 4px;
+    }
+
+    .copyright {
+        font-size: 14px;
+    }
+
+    .social-media-item {
+        width: 44px;
+        height: 44px;
+        padding: 12px;
+    }
+
+    .footer-contacts {
+        gap: 40px;
+    }
+
+}
+
+@media screen and (max-width:959px) {
+    .footer-section-1 {
+        grid-auto-flow: row;
+        justify-content: center;
+        gap: 80px;
+    }
+    
+    .footer-navigation {
+        margin: 0;
+    }
+
+   .footer-contacts {
+    display: flex;
+    gap: 40px;
+   }
+
+   .contacts-container {
+    margin: 0;
+   }
 }

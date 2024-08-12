@@ -1,29 +1,4 @@
-:root {
-	--absolute-white: #fff;
-	--absolute-black: #000;
-	--orange-65: #ff8d4d;
-	--orange-70: #ff9e66;
-	--orange-75: #ffae80;
-	--orange-80: #ffbe99;
-	--orange-90: #ffdecc;
-	--orange-95: #ffefe5;
-	--orange-97: #fff5f0;
-	--orange-99: #fffcfa;
-	--grey-10: #1a1a1a;
-	--grey-15: #262626;
-	--grey-20: #333;
-	--grey-30: #4c4c4d;
-	--grey-35: #59595a;
-	--grey-40: #656567;
-	--grey-60: #98989a;
-	--grey-70: #b3b3b3;
-}
-
-:root {
-    --font-family: "Outfit", sans-serif;
-    --second-family: "Raleway", sans-serif;
-    --third-family: "Inter", sans-serif;
-  }
+@import url(variables.css);
 
 
 body {
@@ -75,6 +50,56 @@ body {
     line-height: 24px; 
     text-align: center;
     color: var(--grey-20);
-    margin: 0 200px;
+    text-align: center;
+	padding: 0 200px;
 }
 
+/* @media screen and (max-width:481px) {
+	
+} */
+
+
+@media screen and (max-width:576px) {
+	.wrapper {
+		max-width: 1350px;
+		margin-inline: auto;
+	}
+
+	.subtitle {
+		padding: 0 20px;
+	}
+}
+
+@media screen and (max-width:992px) {
+	body {
+		margin: 40px 16px 20px 16px;
+	}
+
+	.section {
+		margin: 80px 0;
+	}
+
+	.title {
+		font-size: 38px;
+		line-height: 49px; 
+		margin: 10px auto;
+	}
+
+	.title-block {
+		margin-bottom: 50px;
+	}
+
+	.subtitle {
+		padding: 0 40px;
+	}
+}
+
+/* @media screen and (max-width:1024px) { 
+	
+ } */
+
+ @media screen and (max-width:1280px) { 
+	.subtitle {
+		padding: 0 80px;
+	}
+ }

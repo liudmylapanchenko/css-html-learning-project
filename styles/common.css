@@ -1,0 +1,8 @@
+@import url(base.css);
+@import url(variables.css);
+
+.shadow-border {
+    border: var(--common-border);
+    border-radius: 10px;
+    box-shadow: 4px 4px 0 2px var(--grey-10);
+}
