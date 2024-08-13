@@ -28,6 +28,9 @@
 
 .footer-logo-text {
     margin-left: 6.5px;
+    font-family: "Outfit", sans-serif;
+    font-weight: 500;
+    font-size: 18px;
 }
 
 .footer-motto {
@@ -168,6 +171,24 @@
     width: 48px;
     height: 48px;
     background: var(--orange-90);
+}
+
+.facebook {
+    background-image: url(../images/facebook.svg);
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+
+.twitter {
+    background-image: url(../images/twitter.svg);
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+
+.linkedin {
+    background-image: url(../images/linkedin.svg);
+    background-repeat: no-repeat;
+    background-position: center center;
 }
 
 .copyright {

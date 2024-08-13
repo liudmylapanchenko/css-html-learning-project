@@ -99,7 +99,7 @@
 }
 
 .intro-title {
-    font-family: "Raleway", sans-serif;
+    font-family: "Raleway", sans-serif; 
     font-weight: 800;
     font-size: 40px;
     line-height: 52px; 
@@ -150,7 +150,6 @@
 
 .benefits-main-block {
     display: grid;
-    /* grid-template: repeat(2, 1fr) / repeat(3, 400px); */
     grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
     gap: 68px 40px;
     position: relative;
@@ -244,6 +243,24 @@
     height: 80px;
     background: var(--orange-97);
     margin-bottom: 15px;
+}
+
+.photo-first {
+    background-image: url(../images/photo-first.svg);
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+
+.photo-second {
+    background-image: url(../images/photo-second.svg);
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+
+.photo-third {
+    background-image: url(../images/photo-third.svg);
+    background-repeat: no-repeat;
+    background-position: center center;
 }
 
 .name {
@@ -508,5 +525,21 @@ i {
     .banner {
         flex-direction: column;
         text-align: center;
+    }
+}
+
+@media screen and (max-width:1280px) {
+    .numbers {
+        flex-direction: column;
+    }
+
+    .numbers-item {
+        border-bottom: var(--common-border);
+        padding: 20px;
+        text-align: center;
+    }
+
+    .numbers-item:last-child {
+        border-bottom: none;
     }
 }
