@@ -4,6 +4,10 @@
 body {
     background-color: var(--orange-97);
     margin: 0 50px;
+	font-family: var(--font-family);
+	font-weight: 500;
+    font-size: 16px;
+    line-height: 24px; 
 }
 
 /* Sections Styles */
@@ -19,10 +23,6 @@ body {
 }
 
 .button {
-    font-family: "Outfit", sans-serif;
-    font-weight: 500;
-    font-size: 16px;
-    line-height: 24px; 
     text-align: center;
     color: var(--grey-20);
     border: 2px solid var(--absolute-black);
@@ -34,7 +34,7 @@ body {
 }
 
 .title {
-    font-family: "Raleway", sans-serif;
+    font-family: var(--second-family);
     font-weight: 700;
     font-size: 48px;
     line-height: 62px; 
@@ -44,19 +44,11 @@ body {
 }
 
 .subtitle {
-    font-family: "Outfit", sans-serif;
-    font-weight: 500;
-    font-size: 16px;
-    line-height: 24px; 
     text-align: center;
     color: var(--grey-20);
     text-align: center;
 	padding: 0 200px;
 }
-
-/* @media screen and (max-width:481px) {
-	
-} */
 
 
 @media screen and (max-width:576px) {
@@ -93,10 +85,6 @@ body {
 		padding: 0 40px;
 	}
 }
-
-/* @media screen and (max-width:1024px) { 
-	
- } */
 
  @media screen and (max-width:1280px) { 
 	.subtitle {

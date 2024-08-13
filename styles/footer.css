@@ -28,16 +28,10 @@
 
 .footer-logo-text {
     margin-left: 6.5px;
-    font-family: "Outfit", sans-serif;
-    font-weight: 500;
     font-size: 18px;
 }
 
-.footer-motto {
-    font-family: "Outfit", sans-serif;
-    font-weight: 500;
-    font-size: 16px;
-    line-height: 24px; 
+.footer-motto { 
     color: var(--grey-30);
     margin-top: 16px;
 }
@@ -66,17 +60,12 @@
 
 .contacts-text a {
     text-decoration: none;
-    font-family: "Outfit", sans-serif;
-    font-weight: 500;
-    font-size: 16px;
-    line-height: 24px; 
     color: var(--grey-15);
 }
 
 .footer-navigation {
     display: grid;
     grid-auto-flow: column;
-    /* grid-template-columns: repeat(auto-fit, minmax(134px, 1fr)); */
     gap: 50px 30px;
     margin: 0 0 36px 80px;
 }
@@ -91,10 +80,7 @@
 
 .footer-nav-main a {
     text-decoration: none;
-    font-family: "Outfit", sans-serif;
     font-weight: 600;
-    font-size: 16px;
-    line-height: 24px; 
     color: var(--grey-15);
 }
 
@@ -112,10 +98,6 @@
 
 .footer-nav-add a {
     text-decoration: none;
-    font-family: "Outfit", sans-serif;
-    font-weight: 500;
-    font-size: 16px;
-    line-height: 24px; 
     color: var(--grey-20);
     text-wrap: wrap;
 }
@@ -142,10 +124,6 @@
 }
 
 .policies-item a {
-    font-family: "Outfit", sans-serif;
-    font-weight: 500;
-    font-size: 16px;
-    line-height: 24px; 
     color: var(--grey-20);
     text-decoration: none;
 }
@@ -192,10 +170,6 @@
 }
 
 .copyright {
-    font-family: "Outfit", sans-serif;
-    font-weight: 500;
-    font-size: 16px;
-    line-height: 24px; 
     text-align: center;
     color: var(--grey-40);
     margin-top: 20px;
