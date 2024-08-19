@@ -2,7 +2,7 @@
 @import url(common.css);
 @import url(variables.css);
 
-.banner {
+/* .banner {
     margin: 40px 30px 0 30px;
     padding: 100px 80px;
     background: url(../images/about-banner.svg) no-repeat;
@@ -24,7 +24,7 @@
 
 .banner-text {
 color: var(--grey-20);
-}
+} */
 
 /* Mission Block */
 
@@ -375,10 +375,6 @@ tr th:last-child {
         left: 60px;
         height: 530px;
     }
-
-    .banner {
-        margin: 40px 0 0 0;
-    }
 }
 
 
@@ -396,13 +392,6 @@ tr th:last-child {
         top: 120px;
         left: 40px;
         height: 466px;
-    }
-
-    .banner {
-        grid-template-columns: 1fr;
-        text-align: center;
-        padding: 50px 30px;
-        gap: 20px;
     }
 
     .mission-block {

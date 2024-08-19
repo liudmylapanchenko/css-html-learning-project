@@ -1,0 +1,172 @@
+@import url(base.css);
+@import url(common.css);
+@import url(variables.css);
+
+button,
+fieldset,
+input,
+legend,
+select,
+textarea {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+}
+
+.form-wrapper {
+    padding: 100px 80px 80px 80px;
+    position: relative;
+}
+
+.form-wrapper::before {
+    content: url(../images/twitter.svg);
+    display: block;
+    position: absolute;
+    border: var(--common-border);
+    border-radius: 6px;
+    padding: 16px 50px;
+    width: 126px;
+    height: 58px;
+    background: var(--orange-90);
+    top: -28px;
+    left: calc(50% - 63px);
+}
+
+form {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 40px;
+    position: relative;
+}
+
+form::before, form::after {
+    content: "";
+    display: block;
+    position: absolute;
+    border: var(--common-border);
+    border-radius: 6px;
+    padding: 16px 50px;
+    width: 126px;
+    height: 58px;
+    background: var(--orange-90);
+    top: -128px;
+}
+
+form::before {
+    content: url(../images/facebook.svg);
+    left: calc(40% - 126px);
+}
+
+form::after {
+    content: url(../images/linkedin.svg);
+    right: calc(40% - 126px);
+}
+
+
+input, select {
+    border: var(--common-border);
+    border-radius: 6px;
+    padding: 24px;
+    background: var(--orange-99);
+    width: 100%;
+}
+
+label {
+    display: block;
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 30px; 
+    color: var(--grey-30);
+    margin-bottom: 14px;
+}
+
+.message {
+    grid-column: span 2;
+}
+
+textarea {
+    border: var(--common-border);
+    border-radius: 6px;
+    padding: 24px;
+    background: var(--orange-99);
+    resize: vertical;
+    grid-column: span 2;
+    width: 100%;
+}
+
+.submit {
+    border: var(--common-border);  
+    border-radius: 10px;
+    padding: 24px 34px;
+    background: var(--orange-75);
+    grid-column: span 2;
+}
+
+select:invalid { 
+    color: var(--grey-40); 
+}
+
+input:focus {
+    outline: none;
+    border: solid 2px var(--orange-70);
+}
+
+@media screen and (max-width: 960px) {
+    .form-wrapper {
+        padding: 80px 30px 30px 30px;
+    }
+
+    form::before, form::after {
+        top: -108px;
+    }
+}
+
+@media screen and (max-width: 960px) {
+    .form-wrapper::before {
+        padding: 16px 24px;
+        width: 74px;
+        left: calc(50% - 37px);
+    }
+
+    form::before, form::after {
+        padding: 16px 24px;
+        width: 74px;
+    }
+    
+    form::before {
+        left: calc(42% - 74px);
+    }
+    
+    form::after {
+        right: calc(42% - 74px);
+    }
+}
+
+@media screen and (max-width: 640px) {
+    form {
+        display: block;
+    }
+
+    .form-item, .message {
+        margin-bottom: 30px;
+    }
+
+    form::before {
+        left: calc(39% - 74px);
+    }
+    
+    form::after {
+        right: calc(39% - 74px);
+    }
+}
+
+@media screen and (max-width: 480px) {
+
+    form::before {
+        left: calc(37% - 74px);
+    }
+    
+    form::after {
+        right: calc(37% - 74px);
+    }
+}
