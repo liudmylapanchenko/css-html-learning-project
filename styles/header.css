@@ -195,8 +195,8 @@
         display: none;
     }
 
-    .menu-item {
-        padding-inline: 10px;
+    .menu-item a {
+        padding: 20px 10px;
     }
 
     .admition-image-edge {
