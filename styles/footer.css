@@ -46,6 +46,8 @@
 .contacts-item {
     display: flex;
     align-items: center;
+    text-decoration: none;
+    color: var(--grey-15);
 }
 
 .contacts-icon {
@@ -56,11 +58,7 @@
     height: 32px;
     background: var(--orange-97);
     margin-right: 8px;
-}
-
-.contacts-text a {
-    text-decoration: none;
-    color: var(--grey-15);
+    display: inline-block;
 }
 
 .footer-navigation {
