@@ -45,3 +45,17 @@
   #root, #__next {
     isolation: isolate;
   }
+
+  /* 
+    9. Forms
+  */
+  button,
+  fieldset,
+  input,
+  legend,
+  select,
+  textarea {
+      -webkit-appearance: none;
+      -moz-appearance: none;
+      appearance: none;
+  }

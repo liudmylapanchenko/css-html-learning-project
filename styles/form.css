@@ -2,15 +2,8 @@
 @import url(common.css);
 @import url(variables.css);
 
-button,
-fieldset,
-input,
-legend,
-select,
-textarea {
-    -webkit-appearance: none;
-    -moz-appearance: none;
-    appearance: none;
+.banner-contacts-item:hover {
+    background: var(--orange-95);
 }
 
 .form-wrapper {
@@ -18,10 +11,9 @@ textarea {
     position: relative;
 }
 
-.form-wrapper::before {
-    content: url(../images/twitter.svg);
-    display: block;
+.form-link-element {
     position: absolute;
+    display: inline-block;
     border: var(--common-border);
     border-radius: 6px;
     padding: 16px 50px;
@@ -29,37 +21,24 @@ textarea {
     height: 58px;
     background: var(--orange-90);
     top: -28px;
+}
+
+.form-facebook {
+    left: calc(40% - 126px);
+}
+
+.form-twitter {
     left: calc(50% - 63px);
+}
+
+.form-linkedin {
+    right: calc(40% - 126px);
 }
 
 form {
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 40px;
-    position: relative;
-}
-
-form::before, form::after {
-    content: "";
-    display: block;
-    position: absolute;
-    border: var(--common-border);
-    border-radius: 6px;
-    padding: 16px 50px;
-    width: 126px;
-    height: 58px;
-    background: var(--orange-90);
-    top: -128px;
-}
-
-form::before {
-    content: url(../images/facebook.svg);
-    left: calc(40% - 126px);
-}
-
-form::after {
-    content: url(../images/linkedin.svg);
-    right: calc(40% - 126px);
 }
 
 
@@ -94,51 +73,63 @@ textarea {
     width: 100%;
 }
 
-.submit {
+button {
     border: var(--common-border);  
     border-radius: 10px;
     padding: 24px 34px;
     background: var(--orange-75);
     grid-column: span 2;
+    transition: all 250ms ease-in-out;
+}
+
+button:hover, button:focus {
+    font-size: larger;
+    color: var(--absolute-white);
+    background: var(--orange-70);
+    outline: none;
+    border: solid 2px var(--absolute-white);
 }
 
 select:invalid { 
     color: var(--grey-40); 
 }
 
-input:focus {
+
+input:hover, select:hover, textarea:hover {
+    outline: none;
+    border: solid 2px var(--grey-70);
+}
+
+input:focus, select:focus, textarea:focus {
     outline: none;
     border: solid 2px var(--orange-70);
 }
+
+/* Media Queries */
 
 @media screen and (max-width: 960px) {
     .form-wrapper {
         padding: 80px 30px 30px 30px;
     }
-
-    form::before, form::after {
-        top: -108px;
-    }
 }
 
-@media screen and (max-width: 960px) {
-    .form-wrapper::before {
+@media screen and (max-width: 840px) {
+    .form-link-element {
         padding: 16px 24px;
         width: 74px;
+        
+    }
+    
+    .form-facebook {
+        left: calc(43% - 74px);
+    }
+    
+    .form-twitter {
         left: calc(50% - 37px);
     }
-
-    form::before, form::after {
-        padding: 16px 24px;
-        width: 74px;
-    }
     
-    form::before {
-        left: calc(42% - 74px);
-    }
-    
-    form::after {
-        right: calc(42% - 74px);
+    .form-linkedin {
+        right: calc(43% - 74px);
     }
 }
 
@@ -151,22 +142,22 @@ input:focus {
         margin-bottom: 30px;
     }
 
-    form::before {
-        left: calc(39% - 74px);
+    .form-facebook {
+        left: calc(41% - 74px);
     }
-    
-    form::after {
-        right: calc(39% - 74px);
+
+    .form-linkedin {
+        right: calc(41% - 74px);
     }
 }
 
 @media screen and (max-width: 480px) {
 
-    form::before {
-        left: calc(37% - 74px);
+    .form-facebook {
+        left: calc(39% - 74px);
     }
-    
-    form::after {
-        right: calc(37% - 74px);
+
+    .form-linkedin {
+        right: calc(39% - 74px);
     }
 }

@@ -2,7 +2,7 @@
 @import url(common.css);
 @import url(variables.css);
 
-.banner {
+.banner-home {
     display: flex;
     padding: 60px 30px 0 30px;
     gap: 50px;
@@ -450,14 +450,24 @@ i {
 
 
 @media screen and (max-width:959px) {
-    .banner {
+    .banner-home {
         flex-direction: column;
         text-align: center;
     }
 }
 
+@media screen and (max-width:1200px) {
+    .intro {
+        margin-bottom: 30px;
+    }
+
+    .numbers-item {
+        padding: 10px;
+    }
+}
+
 @media screen and (max-width:1280px) {
-    .banner {
+    .banner-home {
         padding: 50px 0 0 0;
     }
 
