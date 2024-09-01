@@ -18,6 +18,7 @@
     height: 660px;
     width: 100%;
     position: relative;
+    min-width: 600px;
 }
 
 .banner-image {
@@ -121,6 +122,7 @@
     background: var(--orange-95);
     display: flex;
     justify-content: space-around;
+    gap: 40px;
 }
 
 .numbers p {
@@ -241,7 +243,6 @@ i {
     display: flex;
     flex-direction: column;
     max-width: 540px;
-    /* width: 50%; */
     row-gap: 30px;
 }
 
@@ -461,8 +462,12 @@ i {
         margin-bottom: 30px;
     }
 
-    .numbers-item {
-        padding: 10px;
+    .banner-background {
+        min-width: 500px;
+    }
+    
+    .banner-home {
+        gap: 30px;
     }
 }
 
@@ -473,11 +478,12 @@ i {
 
     .numbers {
         flex-direction: column;
+        gap: 0;
     }
 
     .numbers-item {
         border-bottom: var(--common-border);
-        padding: 20px;
+        padding: 10px;
         text-align: center;
     }
 
