@@ -112,6 +112,14 @@
     display: none;
 }
 
+@media screen and (max-width:570px) {
+
+    .admission-content span {
+        padding-right: 0px;
+        padding-left: 14px;
+    }
+}
+
 @media screen and (max-width:639px) {
     .admission-content a {
         font-size: 17px;
